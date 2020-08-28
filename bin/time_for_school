@@ -14,7 +14,24 @@ avi.last_name = "Flombaum"
 
 
 some_knowledge = avi.teach 
+some_more_knowledge = avi.teach
+even_more = avi.teach
 
 steve.learn(some_knowledge)
+steve.learn(some_knowledge)
+steve.learn(some_knowledge)
 
-puts "Steve just learned this important knowledge: '#{steve.knowledge.first}' from Avi"
+puts "Steve just learned this important knowledge: '#{steve.knowledge.last}' from Avi"
+
+
+jim = Student.new
+jim.first_name = "Jim"
+jim.last_name = "Halpert"
+
+jim.learn(some_knowledge)
+jim.learn(some_more_knowledge)
+jim.learn(even_more)
+
+jim.knowledge.each do |knowledge|
+    puts "#{jim.first_name} #{jim.last_name} just learned this important thing: '#{knowledge}' from his teacher"
+end
