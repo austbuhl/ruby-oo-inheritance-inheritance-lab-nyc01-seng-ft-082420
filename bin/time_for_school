@@ -25,7 +25,7 @@ puts "Steve just learned this important knowledge: '#{steve.knowledge.last}' fro
 
 
 jim = Student.new
-jim.first_name = "Jim"
+jim.first_name = "Jimothy"
 jim.last_name = "Halpert"
 
 jim.learn(some_knowledge)
